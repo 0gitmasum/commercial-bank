@@ -1,0 +1,100 @@
+
+body{
+    padding-top: 150px;
+}
+
+
+/* login page style*/
+
+.submit-area{
+    color: #282a35;
+    margin-top: 50px;
+    padding: 50px;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+@media screen and (min-width: 768px) {
+    .submit-area{
+        margin: auto;
+        width: 40%;
+    }
+}
+@media screen and (max-width: 992px){
+    .submit-area{
+        margin: auto;
+        width: 80%;
+    }
+}
+.submit{
+    border: none;
+    border-radius: 15px;
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #FFC0C7;
+    box-shadow: 0 5px 5px 0px gray;
+    cursor: pointer;
+}
+.submit:hover{
+    color: #fff;
+    background-color: #059862;
+    box-shadow: none;
+}
+
+.forget-password{
+    border: none;
+    background: none;
+    font-weight: 500;
+    color: #282a35;
+}
+.forget-password:hover{
+    color: #059862;
+}
+
+
+/* Transaction area style start here/ second section; */
+
+#transaction-area{
+    display: none;
+}
+.title{
+    color: darkblue;
+}
+.title u{
+    text-decoration: underline solid green;
+}
+.deposit{
+    background-image: linear-gradient(45deg, #415ce4ec,rgb(23, 93, 199));
+}
+.withdraw{
+    background-image: linear-gradient(45deg, tomato, lightsalmon);
+}
+.balance{
+    background-image: linear-gradient(45deg,rgb(253, 150, 109), orange );
+}
+.amount-status{
+    color: #ffffff;
+    margin: 0px 20px;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Deposit area style */
+
+.deposit-area{
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    background-color: lightgreen;
+    margin-bottom: 10px;
+}
+.withdraw-area{
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    background-color: lightgreen;
+    margin-bottom: 10px;
+}
