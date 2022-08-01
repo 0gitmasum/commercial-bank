@@ -13,7 +13,7 @@ loginBtn.addEventListener("click", function () {
         transactionArea.style.display = "block";
     }
     else {
-        Swal.fire({
+        swal({
             icon: 'email',
             title: 'Enter this email',
             text: 'admin@bank.com'
@@ -27,7 +27,7 @@ loginBtn.addEventListener("click", function () {
 // forget button event handler;
 const forgetBtn = document.getElementById("forget");
 forgetBtn.addEventListener("click", function () {
-    Swal.fire(
+    swal(
         'Please enter given password'
     )
     document.getElementById("email").value = "";
@@ -44,11 +44,11 @@ depositBtn.addEventListener("click", function () {
         updateTotalAmount("currentBalance", depositNumber);
     }
     else {
-        Swal.fire({
+        swal({
             icon: 'error',
             title: 'Sorry',
             text: 'Deposit number should be positive'
-        })
+        });
     }
 
     document.getElementById("depositAmount").value = "";
@@ -64,11 +64,11 @@ withdrawBtn.addEventListener("click", function () {
         updateTotalAmount("currentBalance", -1 * withdrawNumber);
     }
     else {
-        Swal.fire({
+        swal({
             icon: 'error',
-            title: 'Sorry',
+            title: 'Oops!',
             text: 'Withdraw number should be positive'
-        })
+        });
     }
 
     document.getElementById("withdrawAmount").value = "";
